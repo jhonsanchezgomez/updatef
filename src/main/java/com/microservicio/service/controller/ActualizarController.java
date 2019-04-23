@@ -58,7 +58,7 @@ public class ActualizarController {
 //		headers.set("Accept", MediaType.APPLICATION_JSON_VALUE);
 //		return new HttpEntity<>(headers);
 //		}
-	@PostMapping("/tarjeta/{monto}/{tipo}/{idT}")
+	@GetMapping("/tarjeta/{monto}/{tipo}/{idT}")
 	public String dataActu(@PathVariable(value = "monto") double monto, @PathVariable(value = "tipo") String tipo,
 			@PathVariable(value = "idT") long idT) throws RestClientException, IOException {
 		t = new Transaccion();
